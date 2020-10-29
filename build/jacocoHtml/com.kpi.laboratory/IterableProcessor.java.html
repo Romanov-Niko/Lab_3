@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ru"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>IterableProcessor.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">lab3</a> &gt; <a href="index.source.html" class="el_package">com.kpi.laboratory</a> &gt; <span class="el_source">IterableProcessor.java</span></div><h1>IterableProcessor.java</h1><pre class="source lang-java linenums">package com.kpi.laboratory;
+
+import java.util.*;
+import java.lang.reflect.Array;
+import java.util.function.Consumer;
+import java.util.function.Function;
+import java.util.function.IntPredicate;
+import java.util.function.Predicate;
+import java.util.stream.Stream;
+import java.util.stream.StreamSupport;
+
+<span class="fc" id="L12">public class IterableProcessor {</span>
+
+    public static &lt;T&gt; Iterable&lt;T&gt; filter(Iterable&lt;T&gt; unfiltered, Predicate&lt;? super T&gt; retainIfTrue) {
+<span class="fc" id="L15">        List&lt;T&gt; result = new LinkedList&lt;&gt;();</span>
+<span class="fc bfc" id="L16" title="All 2 branches covered.">        for (T temp: unfiltered) {</span>
+<span class="fc bfc" id="L17" title="All 2 branches covered.">            if (retainIfTrue.test(temp))</span>
+<span class="fc" id="L18">                result.add(temp);</span>
+<span class="fc" id="L19">        }</span>
+<span class="fc" id="L20">        return result;</span>
+    }
+    public static &lt;F, T&gt; Iterable&lt;T&gt; transform(Iterable&lt;F&gt; fromIterable, Function&lt;? super F, ? extends T&gt; function)
+    {
+<span class="fc" id="L24">        List&lt;T&gt; result = new LinkedList&lt;&gt;();</span>
+<span class="fc bfc" id="L25" title="All 2 branches covered.">        for (F temp: fromIterable)</span>
+<span class="fc" id="L26">            result.add(function.apply(temp));</span>
+<span class="fc" id="L27">        return result;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

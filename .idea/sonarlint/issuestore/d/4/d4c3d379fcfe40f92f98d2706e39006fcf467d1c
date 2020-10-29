@@ -1,0 +1,15 @@
+
+]
+java:S1128	";Remove this unused import 'java.util.stream.StreamSupport'.(ö°€ÿÿÿÿÿ8´ÑõÖ.
+Q
+java:S1128"4Remove this unused import 'java.lang.reflect.Array'.(‡¡É˜8´ÑõÖ.
+Z
+java:S1128"8Remove this unused import 'java.util.function.Consumer'.(Ì†ƒÔùÿÿÿÿ8´ÑõÖ.
+V
+java:S1128"9Remove this unused import 'java.util.function.Predicate'.(ïÍ–¶8ß†ôõÖ.
+Q
+java:S1128"4Remove this unused import 'java.util.stream.Stream'.(ó÷”8´ÑõÖ.
+Y
+java:S1128"<Remove this unused import 'java.util.function.IntPredicate'.(áÕÚ¢8ƒùêõÖ.
+d
+java:S2094"BRemove this empty class, write its code or make it an "interface".(ù®˜¤ıÿÿÿÿ8ß†ôõÖ.

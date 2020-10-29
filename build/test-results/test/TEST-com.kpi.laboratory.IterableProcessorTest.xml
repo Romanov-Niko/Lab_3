@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kpi.laboratory.IterableProcessorTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2020-10-29T09:00:21" hostname="DESKTOP-P88O7Q1" time="0.308">
+  <properties/>
+  <testcase name="transform_double()" classname="com.kpi.laboratory.IterableProcessorTest" time="0.246"/>
+  <testcase name="transform_string()" classname="com.kpi.laboratory.IterableProcessorTest" time="0.003"/>
+  <testcase name="filter_double()" classname="com.kpi.laboratory.IterableProcessorTest" time="0.002"/>
+  <testcase name="transform_integer()" classname="com.kpi.laboratory.IterableProcessorTest" time="0.002"/>
+  <testcase name="transform_character()" classname="com.kpi.laboratory.IterableProcessorTest" time="0.003"/>
+  <testcase name="filter_string()" classname="com.kpi.laboratory.IterableProcessorTest" time="0.01"/>
+  <testcase name="filter_integer()" classname="com.kpi.laboratory.IterableProcessorTest" time="0.002"/>
+  <testcase name="filter_character()" classname="com.kpi.laboratory.IterableProcessorTest" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
